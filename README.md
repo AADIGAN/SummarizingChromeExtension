@@ -11,7 +11,7 @@ We, the undersigned members of our Team, now mutually agree and solemnly commit 
 #### Overview
 The team is committed to fostering a cooperative and productive atmosphere. We've established guidelines for effective communication, structured teamwork, and high-quality work output.
 
-We are currently working on creating a ChromeExtension, a  designed to replicate the messaging and user functionalities of Discord. Chatterbox's frontend is designed with React.js, CSS and Tailwind for layout and styling while the backend is constructed with Firebase. 
+We are currently working on creating a ChromeExtension. This tech stack involves HTML, CSS, and JavaScript for the Chrome extension frontend, and optionally Node.js with Express for backend server operations.
 
 #### Meeting Frequency and Communication
 - We will hold weekly meetings to discuss progress, plan future tasks, and address any issues.
@@ -27,75 +27,59 @@ We are currently working on creating a ChromeExtension, a  designed to replicate
 - Each team member tests their code to ensure it meets project expectations.
 - Before committing changes to Git, we encourage showing the output to other team members for a preliminary review.
 
-#### Project Preferences
-- Our preferred projects (in order of preference) are Discord Clone, Event Ticketing, and E-learning.
-
-#### Lab Section Preferences
-- Our preferred lab sections are (in order of preference) L06, L03, and L09.
 
 #### Website Link
-The web-app can be accessed [here!](https://namekeptanonymous.github.io/Error404/)
+The web-app can be accessed [here!]()
 
 #### Additional Resources
-- [Google Document Link](https://docs.google.com/document/d/1AyMeJwwUZeAwoGpBZNSOshI5_QVa-fb0eNSxW8xPxHw/edit?usp=sharing)
+- [Google Document Link](https://docs.google.com/document/d/1HL-hr2EAjOY4DrtNdOAaOqCycPTFoSEa_w6ETPExHfU/edit?usp=sharing)
 
 ---
 ### User Requirements:
 
-#### Creating an account/Login to an account
-- Unregistered users will be taken to a registration page to create an account
-- Registered users will be taken to a login page to login to their account
+#### Creating an Account/Login to an Account
+- Unregistered users will be taken to a registration page to create an account.
+- Registered users will be taken to a login page to log in to their account.
 
-#### Servers/Channels
-- Users can create channels
-- Users can invite others to their channels
-- Users are all in the same server
-- Users who create a channel have administrator role in that channel
-- Servers can have server bots
+#### Summarization Functionality
+- Users can click on the extension icon to trigger the summarization.
+- Users can input or confirm the text to be summarized.
+- Users can receive a summary of the terms and conditions, highlighting potential risks and suggesting safeguards.
 
-#### Administrator/Normal Users Permissions
-- Users can either have an administrator role or a normal role
-- Administrator users have permissions to manage channels
-- Administrator users have the ability to give others the administrator roles
-- Administrator users have permissions as normal users and more, such as removing members and deleting messages posted by others.
-- Administrator users can add server bots and this bot will be added to all channels
+#### Display and Interaction
+- The extension will display the summarized terms and conditions in a user-friendly format.
+- Users can see a clear list of identified risks and suggested safeguards.
+- Users can copy the summary to the clipboard.
  
-#### Messaging
-- All users can send text messages to channels or directly to another user 
-- All users can send custom emojis (could be re-implemented for servers)
-- All users can send images
-- All users can send file sharing
-- All users can do text formatting
-- All users can send message reactions
-- All users can search for messages
+#### Security and Permissions
+- The extension securely handles API requests to OpenAI’s GPT-4.
+- Sensitive information, such as the API key, is not exposed in the client-side code.
 
-#### User Functionality
-- Users should have a user profile with banner, icon, description, username,.
-- Users should be able to access/update their personal information in their user account settings, such as their username: last name, email address, password, icon, and status.
-- All users can block another user
-- Users should be able to receive notifications
-
-#### Friend Functionality
-
-
-#### Group Chats
-
+#### Notifications and Errors
+- Users receive notifications for successful summarizations.
+- Users receive error messages when there is an issue with the summarization.
 
 ### User Stories:
+User Account Management
+- As an unregistered user, I want to be taken to a registration page so that I can create an account and use the extension.
+- As a registered user, I want to be taken to a login page so that I can access my account and use the extension.
 
-#### User Account Management
+#### Summarization Functionality
+- As a user, I want to click on the extension icon to trigger the summarization process.
+- As a user, I want to input or confirm the text to be summarized, ensuring the correct content is being analyzed.
+- As a user, I want to receive a summary of the terms and conditions, highlighting potential risks and suggesting safeguards, so I can understand them better.
 
+#### Display and Interaction
+- As a user, I want the extension to display the summarized terms and conditions in a user-friendly format for easy reading.
+- As a user, I want to see a clear list of identified risks and suggested safeguards to understand the implications of the terms and conditions.
+- As a user, I want to copy the summary to the clipboard for easy sharing or saving.
 
-#### Servers and Channels
+#### Security and Permissions
+- As a developer, I want the extension to securely handle API requests to OpenAI’s GPT-4 to protect sensitive information.
+- As a developer, I want to ensure that sensitive information, such as the API key, is not exposed in the client-side code to maintain security.
 
+#### Notifications and Errors
+- As a user, I want to receive notifications for successful summarizations so that I know when the process is complete.
+- As a user, I want to receive error messages when there is an issue with the summarization so that I can understand and resolve the problem.
 
-#### Messaging
-
-#### User Profile and Privacy
-
-
-#### Friend Functionality
-
-
-#### Group Chats
 
