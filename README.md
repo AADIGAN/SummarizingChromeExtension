@@ -60,7 +60,8 @@ The web-app can be accessed [here!]()
 - Users receive error messages when there is an issue with the summarization.
 
 ### User Stories:
-User Account Management
+
+#### User Account Management
 - As an unregistered user, I want to be taken to a registration page so that I can create an account and use the extension.
 - As a registered user, I want to be taken to a login page so that I can access my account and use the extension.
 
