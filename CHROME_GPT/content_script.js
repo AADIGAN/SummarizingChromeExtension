@@ -16,7 +16,7 @@
 
 //function Summarize(prompt){
 
-const apiKey = 'sk-proj-EaC5P99M4k6OefJ74iuZT3BlbkFJ1XPqithmHoAqAhsPzugo';
+const apiKey = 'your API key';
 const apiUrl = "https://api.openai.com/v1/chat/completions";
  prompt    = "what is the capital of France?";
 
