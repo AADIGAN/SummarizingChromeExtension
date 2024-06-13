@@ -1,13 +1,12 @@
 {
-    "manifest_version": 3,
-    "name": "Google GPT",
-    "version": "1.0.0",
-    "description": "This is a description of my awesome extension.",
-    "content_scripts": [
-      {
-        "matches": ["https://www.google.com/*"],
-        "js": ["content_script.js"]
-      }]
+  "manifest_version": 3,
+  "name": "Google GPT test",
+  "version": "1.0.0",
+  "description": "This is a description of my awesome extension.",
+  "content_scripts": [
+    {
+      "matches": ["https://reganvannguyen.github.io/"],
+      "js": ["content_script.js"]
+    }]
 
-  }
-  
+}
