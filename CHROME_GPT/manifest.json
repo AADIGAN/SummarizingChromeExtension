@@ -1,12 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "Google GPT test",
+  "name": "Google GPT test2",
   "version": "1.0.0",
   "description": "This is a description of my awesome extension.",
   "content_scripts": [
     {
-      "matches": ["https://reganvannguyen.github.io/"],
+      "matches": ["<all_urls>"],
       "js": ["content_script.js"]
-    }]
-
+    }
+  ],
+  "action": {
+    "default_popup": "index.html"
+  }
 }
