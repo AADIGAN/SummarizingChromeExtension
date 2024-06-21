@@ -3,7 +3,7 @@ body{
     text-align: center;
     font-family: sans-serif;
     /* background-color: rgb(228, 237, 246); */
-    background-color:#c1d3fe;
+    background-color:#424549;
     border-radius: 10px 0px 10px 10px;
     width: 280px;
     min-height: 470px;
@@ -18,9 +18,10 @@ body{
 
 }
 
-#logo{
+.logo{
     padding-top: 0.5em;
     text-align: center;
+    color: white;
 }
 
 
@@ -64,7 +65,7 @@ body{
 
 }
 
-#convert_pdf{
+#download_txt{
     
     margin-top: 0.5em;
     border-radius: 5px;

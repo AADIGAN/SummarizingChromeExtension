@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     function Summarize(prompt) {
-        const apiKey = 'sapi key here';
+        const apiKey = 'api-key-here';
         const apiUrl = "https://api.openai.com/v1/chat/completions";
 
 
@@ -97,5 +97,3 @@ document.addEventListener("DOMContentLoaded", function() {
         window.URL.revokeObjectURL(url);
     });
 });
-
-
