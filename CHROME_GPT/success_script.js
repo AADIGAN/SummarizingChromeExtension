@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     body: JSON.stringify({
                         model: 'gpt-3.5-turbo',
                         messages: [
-                            { role: 'system', content: 'You are a helpful assistant.' },
-                            { role: 'user', content: `"dont write anything else except the risk for this terms and condition in a list in html form. if you write anyting else I will be sad:\n\n${prompt}` }
+                            { role: 'system', content: 'You are an assistant that specializes in summarizing legal documents and identifying potential risks and concerning terms.' },
+                            { role: 'user', content: `Summarize the following terms and conditions. Don't write anything else except the risks for these terms and conditions in a list in HTML form. If you write anything else I will be sad:\n\n${prompt}` }
                         ],
                         max_tokens: 1024,
                         temperature: 0.5,
