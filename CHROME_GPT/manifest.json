@@ -20,5 +20,11 @@
   ],
   "action": {
     "default_popup": "index.html"
-  }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["success.html", "success_script.js", "success.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
