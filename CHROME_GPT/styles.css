@@ -5,8 +5,8 @@ body{
     text-align: center;
     font-family: sans-serif;
     /* background-color: rgb(228, 237, 246); */
-    background-color: #c1d3fe;
-    border-radius: 10px 0px 10px 10px;
+    background-color: #424549;
+    /* border-radius: 10px 0px 10px 10px; */
     width: 280px;
     height: 470px;
     /* box-shadow: 5px 10px rgb(208, 206, 206); */
@@ -15,15 +15,18 @@ body{
 }
 
 
-#box{ /*div*/
-   
-}
+
 
 
 /* 800x600 pixels */
 
 #logo{
     padding-top: 0.5em;
+    color: white;
+}
+
+#sub{
+    color: white;
 }
 
 
