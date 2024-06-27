@@ -38,7 +38,7 @@ body{
     min-height: 26em;
     border-radius: 5px;
     background-color: white;
-    overflow: scroll;
+    /* overflow: scroll; */
     
 
 }
