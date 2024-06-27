@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const loader = document.querySelector('.loader');
         loader.classList.remove('loader--hidden');
 
-        const apiKey = 'your-api-key-here';
+        const apiKey = 'API Key';
         const apiUrl = "https://api.openai.com/v1/chat/completions";
 
         async function fetchSummary(prompt, retries = 5, delay = 2000) {
