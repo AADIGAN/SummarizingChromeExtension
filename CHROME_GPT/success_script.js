@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const loader = document.querySelector('.loader');
         loader.classList.remove('loader--hidden');
 
-        const apiKey = 'your-api-key-here';
+        const apiKey = 'YOUR_API_KEY';
         const apiUrl = "https://api.openai.com/v1/chat/completions";
 
         async function fetchSummary(prompt, retries = 5, delay = 2000) {
@@ -84,4 +84,34 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.removeChild(a);
         window.URL.revokeObjectURL(url);
     });
+
+    // Add the stylesheet and icon toggle functionality
+    var mode = document.getElementById('mode');
+    var stylesheet = document.getElementById('styles');
+
+    // Retrieve the saved stylesheet and icon from Chrome storage
+    chrome.storage.sync.get(['stylesheet', 'icon'], function(data) {
+        if (data.stylesheet) {
+            stylesheet.setAttribute('href', data.stylesheet);
+        }
+        if (data.icon) {
+            mode.innerText = data.icon;
+        }
+    });
+
+    mode.addEventListener('click', function() {
+        var newStylesheet = stylesheet.getAttribute('href') === 'styles_lightmode.css' ? 'styles.css' : 'styles_lightmode.css';
+        var newIcon = newStylesheet === 'styles_lightmode.css' ? '🌙' : '☀️';
+        stylesheet.setAttribute('href', newStylesheet);
+        mode.innerText = newIcon;
+
+        // Save the current stylesheet and icon to Chrome storage
+        chrome.storage.sync.set({
+            stylesheet: newStylesheet,
+            icon: newIcon
+        }, function() {
+            console.log('Stylesheet and icon saved as', newStylesheet, newIcon);
+        });
+    });
+
 });
