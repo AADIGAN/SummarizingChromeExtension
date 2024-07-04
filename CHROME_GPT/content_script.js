@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem('textToSummarize', textAreaValue);
         window.location.replace("success.html");
     });
-    
+
 
     var mode = document.getElementById('mode');
     var stylesheet = document.getElementById('styles');
@@ -36,6 +36,9 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log('Stylesheet and icon saved as', newStylesheet, newIcon);
         });
     });
+
+
+ 
 
 });
 

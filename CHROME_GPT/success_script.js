@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const loader = document.querySelector('.loader');
         loader.classList.remove('loader--hidden');
 
-        const apiKey = 'API KEY ';
+        const apiKey = 'YOUR_API_KEY';
         const apiUrl = "https://api.openai.com/v1/chat/completions";
 
         async function fetchSummary(prompt, retries = 5, delay = 2000) {
@@ -60,7 +60,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     document.getElementById("summarize_again").addEventListener('click', function() {
-        window.location.replace("index.html");
+        const loader = document.querySelector('.loader');
+        loader.classList.remove('loader--hidden');
+        setTimeout(() => {
+            window.location.replace("index.html");
+        }, 1000); // Adjust the delay as needed
     });
 
     document.getElementById("copy").addEventListener('click', function() {
