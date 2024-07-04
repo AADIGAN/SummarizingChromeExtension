@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const loader = document.querySelector('.loader');
         loader.classList.remove('loader--hidden');
 
-        const apiKey = 'YOUR_API_KEY';
+        const apiKey = 'API KEY ';
         const apiUrl = "https://api.openai.com/v1/chat/completions";
 
         async function fetchSummary(prompt, retries = 5, delay = 2000) {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         model: 'gpt-3.5-turbo',
                         messages: [
                             { role: 'system', content: 'You are an assistant that specializes in summarizing legal documents and identifying potential risks and concerning terms.' },
-                            { role: 'user', content: `Summarize the following terms and conditions. Don't write anything else except the risks for these terms and conditions in a list in HTML form. If you write anything else I will be sad:\n\n${prompt}` }
+                            { role: 'user', content: `Summarize the following terms and conditions. Don't write anything else except: the risks for these terms and conditions and the ways the rights the user has incase the terms and conditions are violated. (seperate the risks and protection as 2 seperate headlines) in a list in HTML form. If you write anything else I will be sad:\n\n${prompt}` }
                         ],
                         max_tokens: 1024,
                         temperature: 0.5,
